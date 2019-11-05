@@ -75,3 +75,19 @@
 - ./config/routes.rb
   - rails의 MVC 모델 중 컨트롤러 역할
   - routes.rb -> controller -(변수를 이용하여 전달함)-> view
+- \$ rails generate controller Test
+  - test라는 이름의 컨트롤러 생성
+  - ./app/controllers/ 에 생성
+  - ./view/ 에 view 폴더 생성됨
+- .erb
+  - Embedded RuBy
+  - 정적인 텍스트 안에서 루비 코드를 실행시킬 수 있음
+
+# 2019.11.05
+
+- \$ rails generate model AA
+  - AA 라는 이름의 모델을 생성
+  - ./db/migrate에 migration 파일 수정
+- \$ rake db:migrate
+  - 변경한 migration 적용
+-
