@@ -90,4 +90,11 @@
   - ./db/migrate에 migration 파일 수정
 - \$ rake db:migrate
   - 변경한 migration 적용
--
+- \$ rake db:rollback
+  - db 마지막 migration 되돌리기
+  - 뒤에 STEP-n을 붙이면 n회 전으로 되돌림
+- \$ rails g(enerate) scaffold board title:string content:text
+  - rails로 title(string 타입), content(text 타입)의 스키마를 가진 boards라는 이름의 CRUD가 가능한 페이지를 만들어주는 명령어
+  - DB를 새로 생성해주기 때문에 \$ rake db:migrate를 해줘야 함
+- \$ rails destroy scaffold board
+  - rails로 만들었던 boards 페이지를 삭제해주는 명령어
