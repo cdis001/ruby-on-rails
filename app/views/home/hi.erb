@@ -1,4 +1,6 @@
-<center style="font-size: 60px">Hi! Hi!</center>
+<center style="font-size: 60px">hello!</center>
 <% if @show_message %>
 <p style="float: right"><%= @message %></p>
+<br />
+<p style="float: right"><%= @time.year %>년 <%= @time.month %>월 <%= @time.day %>일 <%= @wday[@time.wday] %>요일</p>
 <% end %>

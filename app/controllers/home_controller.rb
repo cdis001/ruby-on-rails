@@ -7,6 +7,8 @@ class HomeController < ApplicationController
 
     def hi
         @show_message = true
-        @message = "RUN!!!"
+        @message = "RUN"
+        @time = Time.now
+        @wday = ["일","월","화","수","목","금","토"]
     end
 end

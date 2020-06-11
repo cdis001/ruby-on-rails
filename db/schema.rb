@@ -10,20 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_05_050701) do
+ActiveRecord::Schema.define(version: 2020_06_08_050801) do
 
   create_table "aas", force: :cascade do |t|
-    t.string "title"
-    t.string "content"
-    t.string "text"
+    t.string "mame"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "boards", force: :cascade do |t|
-    t.string "title"
-    t.string "content"
-    t.string "text"
+  create_table "ababs", force: :cascade do |t|
+    t.string "name"
+    t.integer "number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
